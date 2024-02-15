@@ -109,13 +109,22 @@ if ($hour >= 9 and $hour <= 18) {
         <!-- /nav -->
         <? if ($APPLICATION->GetCurPage(false) !== '/') { ?>
             <!-- breadcrumbs -->
-            <div class="breadcrumbs-box">
+            <? $APPLICATION->IncludeComponent(
+                "bitrix:breadcrumb",
+                "breadcrumbs_exam1",
+                array(
+                    "PATH" => "",
+                    "SITE_ID" => "s1",
+                    "START_FROM" => "0"
+                )
+            ); ?>
+            <!-- <div class="breadcrumbs-box">
                 <div class="inner-wrap">
                     <a href="">Главная</a>
                     <a href="">Мебель</a>
                     <span>Выставки и события</span>
                 </div>
-            </div>
+            </div> -->
             <!-- /breadcrumbs -->
         <? } ?>
         <!-- page -->
