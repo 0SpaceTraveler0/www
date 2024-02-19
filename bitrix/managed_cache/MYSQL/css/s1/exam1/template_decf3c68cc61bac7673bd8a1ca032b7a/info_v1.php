@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/local/templates/exam1/components/bitrix/menu/top_menu_exam1/style.css" => "1707727986490",]; ?>
